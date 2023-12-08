@@ -23,7 +23,16 @@ hitBall.goto(0,0)
 hitBall.dx = 5
 hitBall.dy = -5
 
-## Score player
+## Keep track of the score
+leftPlayer = 0
+rightPlayer = 0
+sketch = turtle.Turtle()
+sketch.speed(0)
+sketch.color("blue")
+sketch.penup()
+sketch.hideturtle()
+sketch.goto(0, 260)
+sketch.write("Left_player : 0    Right_player: 0", align="center", font=("Courier", 24, "normal"))
 
 
 

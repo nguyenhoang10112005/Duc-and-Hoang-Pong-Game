@@ -1,4 +1,4 @@
 git add .
+git rm github_command.txt
 git commit -m "Message"
-git checkout -b Duc
-git push origin Duc
+git push origin main
