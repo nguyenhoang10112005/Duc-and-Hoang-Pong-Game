@@ -6,13 +6,6 @@ sc.title("Pong Game")
 sc.setup(800,800)
 sc.bgcolor("black")
 
-## set up key press
-sc.listen()
-sc.onkeypress(paddleaup,"w")
-sc.onkeypress(paddleadown,"s")
-sc.onkeypress(paddlebup,"Up")
-sc.onkeypress(paddlebdown,"Down")
-
 ## create ball
 hitBall = turtle.Turtle()
 hitBall.speed(80)
@@ -60,6 +53,13 @@ right_paddle.speed(0)
 right_paddle.shape("rectangle")
 
 right_paddle.shapesize(stretch_wid=6,stretch_len=2)
+
+## set up key press
+sc.listen()
+sc.onkeypress(paddleaup,"w")
+sc.onkeypress(paddleadown,"s")
+sc.onkeypress(paddlebup,"Up")
+sc.onkeypress(paddlebdown,"Down")
 
 ## main function
 def main():
