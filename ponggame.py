@@ -13,6 +13,11 @@ sc.onkeypress(paddleadown,"s")
 sc.onkeypress(paddlebup,"Up")
 sc.onkeypress(paddlebdown,"Down")
 
+
+
+
+
+"sdjfsj;dfl;sdkfl;ksl;dfk;lskdfl;ksdl;f"
 ## main function
 def main():
     while True:
