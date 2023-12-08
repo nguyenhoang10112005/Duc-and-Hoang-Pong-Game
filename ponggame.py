@@ -61,10 +61,9 @@ right_paddle.shape("rectangle")
 
 right_paddle.shapesize(stretch_wid=6,stretch_len=2)
 
-
-
-"sdjfsj;dfl;sdkfl;ksl;dfk;lskdfl;ksdl;f"
 ## main function
 def main():
     while True:
         sc.update()
+        hitBall.setx(hitBall.xcor() + hitBall.dx)
+        hitBall.sety(hitBall.ycor() + hitBall.dy)
