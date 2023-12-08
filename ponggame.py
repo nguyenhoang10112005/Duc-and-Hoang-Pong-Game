@@ -13,34 +13,59 @@ sc.onkeypress(paddleadown,"s")
 sc.onkeypress(paddlebup,"Up")
 sc.onkeypress(paddlebdown,"Down")
 
+## create ball
+hitBall = turtle.Turtle()
+hitBall.speed(80)
+hitBall.shape("circle")
+hitBall.color("white")
+hitBall.penup()
+hitBall.goto(0,0)
+hitBall.dx = 5
+hitBall.dy = -5
+
+## Score player
+
+
+
 #Left Paddle 
 left_paddle = turtle.Turtle()
-
 left_paddle.speed(0)
-
 left_paddle.shape("rectangle")
-
 left_paddle.shapesize(stretch_wid=6,stretch_len=2)
-
 left_paddle.color("red")
-
 left_paddle.penup()
-
 left_paddle.goto(-400,0)
-
 
 #Right Paddle
 right_paddle = turtle.Turtle()
-
 right_paddle.speed(0)
-
 right_paddle.shape("rectangle")
-
 right_paddle.shapesize(stretch_wid=6,stretch_len=2)
+right_paddle.color("yellow")
+right_paddle.penup()
+right_paddle.goto(400,0)
 
+def paddleaup():
+    y = left_paddle.ycor()
+    y += 20
+    left_paddle.sety(y)
+    
 
+def paddleadown():
+    y = left_paddle.ycor()
+    y -= 20
+    left_paddle.sety(y)
 
-"sdjfsj;dfl;sdkfl;ksl;dfk;lskdfl;ksdl;f"
+def paddlebup():
+    y = right_paddle.ycor()
+    y += 20
+    right_paddle.sety(y)
+
+def paddlebdown():
+    y = right_paddle.ycor()
+    y -= 20
+    right_paddle.sety()
+
 ## main function
 def main():
     while True:
