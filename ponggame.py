@@ -12,7 +12,7 @@ sc.onkeypress(paddleaup,"w")
 sc.onkeypress(paddleadown,"s")
 sc.onkeypress(paddlebup,"Up")
 sc.onkeypress(paddlebdown,"Down")
-
+hoang buoi to
 ## main function
 def main():
     while True:
